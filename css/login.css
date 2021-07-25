@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Hint Siliguri', sans-serif;
+}
+body{
+}
+.view{
+  background: rgb(25,30,45);
+  width: 100vw;
+  height: 100vh;
+  /* padding: 5px; */
+}
+.items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid white; */
+  width: 380px;
+  margin: auto;
+}
+
+.header{
+  /* outline: 1px solid deeppink; */
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header-logo__img{
+  width: 170px;
+}
+.form{
+  height: 280px;
+  /* outline: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.form__title{
+  color: white;
+  font-size: 2.5rem;
+}
+.form__input{
+  border: none;
+  background-color: rgba(200,200,200,0.1);
+  border-radius: 3px;
+  color: white;
+  height: 50px;
+  font-size: 1.3rem;
+  outline: none;
+  padding: 11px;
+}
+.form__input:focus{
+  border: 1px solid gray;
+  padding: 10px;
+}
+::placeholder{
+  color: darkgray;
+  font-size: 1.5rem;
+}
+.form__submit{
+  background-color: rgb(13,85,250);
+  border: 0;
+  border-radius: 3px;
+  color: #eee;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms all;
+}
+.form__submit:hover{
+  background-color: rgb(13,130,250);
+}
+.form__text{
+  color: #bbb;
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+}
+.form__text .link{
+  color: #eee;
+  text-decoration: none;
+}
+.form__text .link:hover{
+  color: lightskyblue;
+  text-decoration: underline;
+}
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.footer-logo__img{
+  width: 100px;
+}
+.footer__about{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+.footer__text{
+  font-size: 1.2rem;
+  padding: 2px 8px;
+}
+.footer__text .link{
+  color: #bbb;
+  text-decoration: none;
+}
+@media (max-width:380px){
+  .view{
+    width: 100%;
+  }
+  .header{
+    height: auto;
+  }
+  .items{
+    width: 100%;
+    padding: 20px;
+  }
+  .footer{
+    padding: 5px;
+  }
+  .footer-logo__img{
+    width: 80px;
+  }
+}
